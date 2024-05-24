@@ -16,7 +16,7 @@ const List = (props) => {
         <span className="list-text">Anime</span>
         <div className="list-container1">
           <div className="list-container2">
-            <Link href="/page">
+            <Link href="/1-silent-voice">
               <a className="list-link">
                 <li className="list-li list-item">
                   <div className="list-container3">
@@ -53,7 +53,7 @@ const List = (props) => {
           }
           .list-container1 {
             flex: 0 0 auto;
-            width: 1864px;
+            width: 1573px;
             height: 568px;
             display: flex;
             align-items: flex-start;
@@ -94,10 +94,11 @@ const List = (props) => {
             font-style: normal;
             margin-top: 200px;
             font-weight: 700;
-            margin-left: 130px;
+            margin-left: 115px;
             padding-top: var(--dl-space-space-halfunit);
             margin-right: 0px;
             padding-left: var(--dl-space-space-halfunit);
+            border-radius: var(--dl-radius-radius-radius4);
             padding-right: var(--dl-space-space-halfunit);
             padding-bottom: var(--dl-space-space-halfunit);
             background-color: #d00000;
@@ -113,18 +114,35 @@ const List = (props) => {
           }
           @media (max-width: 1600px) {
             .list-container1 {
-              width: 1530px;
+              width: 1557px;
+              align-self: center;
             }
             .list-container2 {
-              width: 1210px;
+              width: 100%;
+              align-self: center;
+              justify-content: center;
+            }
+            .list-li {
+              width: 174px;
+              margin-left: var(--dl-space-space-oneandhalfunits);
+            }
+            .list-text1 {
+              padding: 4px;
+              margin-left: 115px;
+              border-radius: var(--dl-radius-radius-radius4);
             }
           }
           @media (max-width: 1200px) {
             .list-container1 {
-              width: 1162px;
+              width: 1168px;
+              margin-left: 20px;
             }
             .list-text1 {
+              padding: 4px;
               margin-left: 115px;
+              border-color: var(--dl-color-theme-neutral-dark);
+              border-width: 1px;
+              border-radius: var(--dl-radius-radius-radius4);
             }
           }
           @media (max-width: 991px) {
@@ -134,12 +152,12 @@ const List = (props) => {
           }
           @media (max-width: 767px) {
             .list-container1 {
-              width: 718px;
+              width: 740px;
             }
           }
           @media (max-width: 479px) {
             .list-container1 {
-              width: 444px;
+              width: 436px;
             }
           }
         `}

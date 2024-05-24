@@ -15,7 +15,12 @@ const Home = (props) => {
         <Navbar1 rootClassName="navbar1-root-class-name"></Navbar1>
         <h1 className="home-text">Animee.lv</h1>
         <Link href="/list">
-          <a className="home-link button">Button</a>
+          <a className="home-link button">
+            <span>
+              <span>Skatīties</span>
+              <br></br>
+            </span>
+          </a>
         </Link>
       </div>
       <style jsx>
@@ -42,7 +47,7 @@ const Home = (props) => {
             height: 46px;
             border-radius: var(--dl-radius-radius-radius8);
             text-decoration: none;
-            background-color: #9c9c9c;
+            background-color: rgb(156, 156, 156);
           }
         `}
       </style>

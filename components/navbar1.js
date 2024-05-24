@@ -10,6 +10,7 @@ const Navbar1 = (props) => {
         <header data-thq="thq-navbar" className="navbar1-navbar-interactive">
           <div data-thq="thq-navbar-nav" className="navbar1-desktop-menu">
             <nav className="navbar1-links">
+              <span className="navbar1-text">{props.text}</span>
               <Link href="/">
                 <a className="navbar1-link thq-body-small thq-link">
                   {props.link1}
@@ -23,7 +24,6 @@ const Navbar1 = (props) => {
             </nav>
             <div className="navbar1-buttons">
               <button className="thq-button-filled">{props.action1}</button>
-              <button className="thq-button-outline">{props.action2}</button>
             </div>
           </div>
           <div data-thq="thq-burger-menu" className="navbar1-burger-menu">
@@ -193,6 +193,15 @@ const Navbar1 = (props) => {
             display: flex;
           }
 
+          @media (max-width: 1200px) {
+            .navbar1-text {
+              color: #ffffff;
+              font-size: 25px;
+              font-style: normal;
+              font-weight: 900;
+              border-radius: var(--dl-radius-radius-radius4);
+            }
+          }
           @media (max-width: 767px) {
             .navbar1-navbar-interactive {
               padding-left: var(--dl-space-space-twounits);
@@ -223,7 +232,8 @@ const Navbar1 = (props) => {
 }
 
 Navbar1.defaultProps = {
-  action1: 'Animes',
+  action1: 'Animee.lv',
+  text: 'Animee.lv',
   link1: 'Home',
   link4: 'Link4',
   link5: 'Link5',
@@ -238,6 +248,7 @@ Navbar1.defaultProps = {
 
 Navbar1.propTypes = {
   action1: PropTypes.string,
+  text: PropTypes.string,
   link1: PropTypes.string,
   link4: PropTypes.string,
   link5: PropTypes.string,
